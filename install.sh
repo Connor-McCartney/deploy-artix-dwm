@@ -8,7 +8,7 @@ set -e
 
 
 
-if [[ $target -eq "uefi-luks-hyperv" ]]; then"
+if [[ $target -eq "uefi-luks-hyperv" ]]; then
     printf "g\nn\n1\n\n+256M\nt\n1\nn\n2\n\n\nw\n" | fdisk /dev/sda
     cryptsetup luksFormat /dev/sda2
     cryptsetup open /dev/sda2 cryptlvm
