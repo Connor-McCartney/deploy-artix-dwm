@@ -30,3 +30,10 @@ sv up openntpd
 basestrap /mnt base base-devel runit elogind-runit
 basestrap /mnt linux linux-firmware
 fstabgen -U /mnt >> /mnt/etc/fstab
+
+
+
+cd /mnt
+#wget https://raw.githubusercontent.com/Connor-McCartney/deploy-arch-dwm/refs/heads/main/after-chroot.sh
+#cat after-chroot.sh | arch-chroot /mnt
+#reboot
