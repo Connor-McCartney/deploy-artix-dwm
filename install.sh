@@ -26,7 +26,7 @@ if [[ $target -eq "uefi-luks-hyperv" ]]; then
 fi
 
 
-sv up openntpd
+#sv up openntpd
 basestrap /mnt base base-devel runit elogind-runit
 basestrap /mnt linux linux-firmware
 fstabgen -U /mnt >> /mnt/etc/fstab
