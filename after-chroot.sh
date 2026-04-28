@@ -27,3 +27,20 @@ fi
 # connman is like runit's NetworkManager
 pacman -S connman-runit connman-gtk --noconfirm
 ln -s /etc/runit/sv/connmand /etc/runit/runsvdir/default
+
+
+
+
+
+
+useradd -m -G users,wheel,audio,video,autologin -s /bin/bash connor
+printf " \n \n" | passwd
+printf " \n \n" | passwd connor
+echo -e "root ALL=(ALL:ALL) ALL\n%wheel ALL=(ALL:ALL) NOPASSWD: ALL\n@includedir /etc/sudoers.d" > /etc/sudoers
+
+cd /home/connor
+#wget https://raw.githubusercontent.com/Connor-McCartney/deploy-arch-dwm/refs/heads/main/user.sh
+#chmod +x user.sh
+#sudo -u connor bash user.sh
+
+rm /after-chroot.sh
