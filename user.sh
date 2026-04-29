@@ -15,7 +15,7 @@ sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox
 #sudo pacman -S --noconfirm waterfox flameshot brave-bin discord obsidian flameshot sagemath thunar google-chrome
 
 #sudo pacman -S --noconfirm xlibre-xserver      # i moved this to the pacstrap so that it's the very first thing
-sudo pacman -S --noconfirm xorg-xinit xorg-xrandr
+sudo pacman -S --noconfirm xorg-xinit xorg-xrandr xclip xsel xautomation xorgproto
 # xrandr --output Virtual-1 --mode 1920x1080
 
 
