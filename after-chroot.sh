@@ -44,8 +44,7 @@ sed -i 's/'#autologin-session='/'autologin-session=dwm'/g' /etc/lightdm/lightdm.
 
 
 
-#useradd -m -G users,wheel,audio,video,autologin -s /bin/bash connor
-useradd -m -G users,wheel,audio,video -s /bin/bash connor
+useradd -m -G users,wheel,audio,video,autologin -s /bin/bash connor
 printf " \n \n" | passwd
 printf " \n \n" | passwd connor
 echo -e "root ALL=(ALL:ALL) ALL\n%wheel ALL=(ALL:ALL) NOPASSWD: ALL\n@includedir /etc/sudoers.d" > /etc/sudoers
