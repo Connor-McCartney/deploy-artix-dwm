@@ -53,4 +53,4 @@ wget https://raw.githubusercontent.com/Connor-McCartney/deploy-artix-dwm/refs/he
 chmod +x user.sh
 sudo -u connor bash user.sh
 
-rm /after-chroot.sh
+#rm /after-chroot.sh
