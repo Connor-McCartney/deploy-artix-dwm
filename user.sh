@@ -113,5 +113,7 @@ sudo make install
 
 # compile treesitter
 cd /opt
-sudo git clone https://github.com/tree-sitter/tree-sitter
+sudo git clone https://github.com/tree-sitter/tree-sitter -b v0.26.8
+cd tree-sitter
+sudo make install
 
