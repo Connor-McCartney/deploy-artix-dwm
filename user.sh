@@ -18,7 +18,7 @@ sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox flameshot
 sudo pacman -S --noconfirm xorg-xinit xorg-xrandr xclip xsel xorgproto
 # xrandr --output Virtual-1 --mode 1920x1080
 
-
+yay --noconfirm -S openvpn openresolv openvpn-update-resolv-conf
 
 # add these if using a monitor
 # xrandr --output LVDS-1 --off
