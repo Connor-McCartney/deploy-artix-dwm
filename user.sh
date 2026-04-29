@@ -82,7 +82,7 @@ python -m venv /home/connor/.p
 #/usr/bin/sage --pip install pycryptodome pwntools --break-system-packages
 
 # LSPs
-yay -S --noconfirm clang pyright lua-language-server asm-lsp rust-analyzer # rust gets installed as a dependancy
+yay -S --noconfirm tree-sitter-cli clang pyright lua-language-server asm-lsp rust-analyzer # rust gets installed as a dependancy
 
 
 # change gtk themes by running nwg-look
