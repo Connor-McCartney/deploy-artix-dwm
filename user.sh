@@ -1,5 +1,15 @@
 set -e
 
+
+# Paru
+cd /tmp
+git clone https://aur.archlinux.org/paru-bin.git
+cd paru-bin
+makepkg -si --noconfirm
+
+
+# packages
+
 sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep fzf bat fd vim less 
 
 sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox
