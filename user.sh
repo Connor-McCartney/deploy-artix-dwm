@@ -42,7 +42,7 @@ git clone https://github.com/Connor-McCartney/deploy-artix-dwm
 mv /tmp/deploy-artix-dwm/suckless /home/connor
 cd /home/connor/suckless/dwm && sudo make clean install
 cd /home/connor/suckless/dmenu && sudo make clean install
-rm -rf /tmp/deploy-artix-dwm
+#rm -rf /tmp/deploy-artix-dwm
 
 
 
