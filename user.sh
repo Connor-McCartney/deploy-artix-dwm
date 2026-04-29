@@ -13,7 +13,6 @@ printf "y\n" | makepkg -si
 
 sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox flameshot
 # yay --noconfirm -S brave-bin discord obsidian google-chrome
-# yay -S sagemath
 
 #sudo pacman -S --noconfirm xlibre-xserver      # i moved this to the pacstrap so that it's the very first thing
 sudo pacman -S --noconfirm xorg-xinit xorg-xrandr xclip xsel xorgproto
@@ -73,8 +72,6 @@ python -m venv /home/connor/.p
 /home/connor/.p/bin/python -m pip install --upgrade pip
 /home/connor/.p/bin/pip install pycryptodome gmpy2 pwntools
 
-# sage libs
-#/usr/bin/sage --pip install pycryptodome pwntools --break-system-packages
 
 # LSPs
 yay -S --noconfirm clang basedpyright-bin lua-language-server asm-lsp rust-analyzer # rust gets installed as a dependancy
