@@ -28,7 +28,7 @@ fi
 
 #sv up openntpd
 basestrap /mnt base base-devel runit elogind-runit
-basestrap /mnt linux linux-firmware cryptsetup
+basestrap /mnt linux linux-firmware cryptsetup grub
 fstabgen -U /mnt >> /mnt/etc/fstab
 
 
