@@ -2,9 +2,14 @@ set -e
 
 
 
-# packages
+sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep fzf bat fd vim less git wget
 
-sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep fzf bat fd vim less 
+# compile yay
+cd /tmp
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+
 
 sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox
 #sudo pacman -S --noconfirm waterfox flameshot brave-bin discord obsidian flameshot sagemath thunar google-chrome
