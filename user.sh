@@ -18,3 +18,14 @@ sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox
 sudo pacman -S --noconfirm xlibre-xserver
 sudo pacman -S --noconfirm xorg-xinit xorg-xrandr
 # xrandr --output Virtual-1 --mode 1920x1080
+
+
+
+
+
+
+# add these if using a monitor
+# xrandr --output LVDS-1 --off
+# xrandr --output VGA-1 --auto
+printf "#xrandr --output LVDS-1 --off\n#sleep 1\n#xrandr --output VGA-1 --auto\nexec dwm" > /home/connor/.xsession # needed to boot with lightdm
+chmod +x /home/connor/.xsession
