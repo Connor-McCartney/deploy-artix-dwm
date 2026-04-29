@@ -25,6 +25,8 @@ alias xx="nvim x.sage"
 alias x="sage x.sage"
 alias clear="printf '\E[H\E[3J'"
 alias yay="yay --noconfirm"
+alias poweroff="sudo poweroff"
+alias reboot="sudo reboot"
 
 cx() {
   chmod +x "$1"
