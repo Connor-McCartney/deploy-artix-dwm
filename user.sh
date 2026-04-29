@@ -11,8 +11,9 @@ cd yay-bin
 printf "y\n" | makepkg -si
 
 
-sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox
-#sudo pacman -S --noconfirm waterfox flameshot brave-bin discord obsidian flameshot sagemath thunar google-chrome
+sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox flameshot
+# yay --noconfirm -S brave-bin discord obsidian google-chrome
+# yay -S sagemath
 
 #sudo pacman -S --noconfirm xlibre-xserver      # i moved this to the pacstrap so that it's the very first thing
 sudo pacman -S --noconfirm xorg-xinit xorg-xrandr xclip xsel xorgproto
