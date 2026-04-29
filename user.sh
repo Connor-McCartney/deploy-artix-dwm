@@ -16,7 +16,10 @@ sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox
 
 #sudo pacman -S --noconfirm xlibre-xserver      # i moved this to the pacstrap so that it's the very first thing
 sudo pacman -S --noconfirm xorg-xinit xorg-xrandr xclip xsel xorgproto
-yay -S --noconfirm xautomation
+
+cd /tmp 
+wget https://www.hoopajoo.net/static/projects/xautomation-1.09.tar.gz
+sudo pacman -S --noconfirm /tmp/xautomation-1.09.tar.gz
 # xrandr --output Virtual-1 --mode 1920x1080
 
 
