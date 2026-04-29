@@ -48,6 +48,7 @@ printf " \n \n" | passwd
 printf " \n \n" | passwd connor
 echo -e "root ALL=(ALL:ALL) ALL\n%wheel ALL=(ALL:ALL) NOPASSWD: ALL\n@includedir /etc/sudoers.d" > /etc/sudoers
 
+pacman -S --noconfirm wget
 cd /home/connor
 wget https://raw.githubusercontent.com/Connor-McCartney/deploy-artix-dwm/refs/heads/main/user.sh
 chmod +x user.sh
