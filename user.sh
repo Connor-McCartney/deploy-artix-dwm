@@ -8,7 +8,7 @@ sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep f
 cd /tmp
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
-makepkg -si
+printf "y\n" | makepkg -si
 
 
 sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox
