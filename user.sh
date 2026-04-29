@@ -42,7 +42,8 @@ git clone https://github.com/Connor-McCartney/deploy-artix-dwm
 mv /tmp/deploy-artix-dwm/suckless /home/connor
 cd /home/connor/suckless/dwm && sudo make clean install
 cd /home/connor/suckless/dmenu && sudo make clean install
-#rm -rf /tmp/deploy-artix-dwm
+sudo mv /tmp/deploy-artix-dwm/xautomation-1.09 /opt
+rm -rf /tmp/deploy-artix-dwm
 
 
 
@@ -105,7 +106,6 @@ sudo mv tree-sitter /usr/bin
 sudo rm tree-sitter-cli-linux-x64.zip
 
 # compile xautomation (to get xte binary)
-sudo mv /tmp/deploy-artix-dwm/xautomation-1.09 
 cd /opt/xautomation-1.09
 ./configure
 sudo make install
