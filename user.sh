@@ -107,14 +107,11 @@ sudo mv tree-sitter /usr/bin
 sudo rm tree-sitter-cli-linux-x64.zip
 
 # compile xautomation (to get xte binary)
-cd /tmp 
-wget https://www.hoopajoo.net/static/projects/xautomation-1.09.tar.gz
-tar -xf xautomation-1.09.tar.gz
-cd xautomation-1.09
+sudo mv /tmp/deploy-artix-dwm/xautomation-1.09 
+cd /opt/xautomation-1.09
 ./configure
-
-
 sudo make install
+
 
 
 echo "done!! :)"
