@@ -1,7 +1,9 @@
 set -e
 
-sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep fzf bat fd vim less pavucontrol
-sudo pacman -S --noconfirm kitty waterfox
+sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep fzf bat fd vim less 
+
+sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox
+#sudo pacman -S --noconfirm waterfox flameshot brave-bin discord obsidian flameshot sagemath thunar google-chrome
 
 sudo pacman -S --noconfirm xlibre-xserver
 sudo pacman -S --noconfirm xorg-xinit xorg-xrandr
