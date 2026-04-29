@@ -6,8 +6,6 @@ git clone https://github.com/Connor-McCartney/deploy-artix-dwm
 
 mv /tmp/deploy-artix-dwm/dotfiles/.config/gtk-3.0 /home/connor/.config
 mv /tmp/deploy-artix-dwm/dotfiles/.config/kitty /home/connor/.config
-mv /tmp/deploy-artix-dwm/dotfiles/.config/konsolerc /home/connor/.config
-mv /tmp/deploy-artix-dwm/dotfiles/.local/share/konsole /home/connor/.local/share
 mv /tmp/deploy-artix-dwm/dotfiles/.config/nvim /home/connor/.config
 mv /tmp/deploy-artix-dwm/dotfiles/.config/picom /home/connor/.config
 mv /tmp/deploy-artix-dwm/dotfiles/.bashrc /home/connor
