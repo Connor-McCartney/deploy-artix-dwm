@@ -16,17 +16,7 @@ sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox
 
 #sudo pacman -S --noconfirm xlibre-xserver      # i moved this to the pacstrap so that it's the very first thing
 sudo pacman -S --noconfirm xorg-xinit xorg-xrandr xclip xsel xorgproto
-
-cd /tmp 
-wget https://www.hoopajoo.net/static/projects/xautomation-1.09.tar.gz
-tar -xf xautomation-1.09.tar.gz
-cd xautomation-1.09
-./configure
-sudo make install
 # xrandr --output Virtual-1 --mode 1920x1080
-
-
-
 
 
 
@@ -38,9 +28,6 @@ sudo make install
 
 printf "#xrandr --output LVDS-1 --off\n#sleep 1\n#xrandr --output VGA-1 --auto\n\n# xrandr --output Virtual-1 --mode 1920x1080 # hyperv\nexec dwm" > /home/connor/.xsession # needed to boot with lightdm
 chmod +x /home/connor/.xsession
-
-
-
 
 
 
@@ -119,5 +106,15 @@ sudo chmod +x tree-sitter
 sudo mv tree-sitter /usr/bin
 sudo rm tree-sitter-cli-linux-x64.zip
 
+# compile xautomation (to get xte binary)
+cd /tmp 
+wget https://www.hoopajoo.net/static/projects/xautomation-1.09.tar.gz
+tar -xf xautomation-1.09.tar.gz
+cd xautomation-1.09
+./configure
 
 
+sudo make install
+
+
+echo "done!! :)"
