@@ -109,3 +109,9 @@ cd /opt
 sudo git clone https://github.com/neovim/neovim -b v0.12.2
 cd neovim
 sudo make install
+
+
+# compile treesitter
+cd /opt
+sudo git clone https://github.com/tree-sitter/tree-sitter
+
