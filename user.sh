@@ -114,3 +114,10 @@ sudo make install
 # compile treesitter
 cd /opt
 sudo wget https://github.com/tree-sitter/tree-sitter/releases/download/v0.26.8/tree-sitter-cli-linux-x64.zip
+sudo unzip tree-sitter-cli-linux-x64.zip
+sudo chmod +x tree-sitter
+sudo mv tree-sitter /usr/bin
+sudo rm tree-sitter-cli-linux-x64.zip
+
+
+
