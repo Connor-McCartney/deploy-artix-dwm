@@ -19,7 +19,10 @@ sudo pacman -S --noconfirm xorg-xinit xorg-xrandr xclip xsel xorgproto
 
 cd /tmp 
 wget https://www.hoopajoo.net/static/projects/xautomation-1.09.tar.gz
-sudo pacman -S --noconfirm /tmp/xautomation-1.09.tar.gz
+tar -xf xautomation-1.09.tar.gz
+cd xautomation-1.09
+./configure
+sudo make install
 # xrandr --output Virtual-1 --mode 1920x1080
 
 
