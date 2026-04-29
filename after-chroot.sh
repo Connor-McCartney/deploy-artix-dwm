@@ -31,16 +31,15 @@ ln -s /etc/runit/sv/connmand /etc/runit/runsvdir/default
 
 
 # lightdm auto-login
-pacman -S --noconfirm lightdm lightdm-runit
-#systemctl enable lightdm
-ln -s /etc/runit/sv/lightdm /etc/runit/runsvdir/default
+#pacman -S --noconfirm lightdm lightdm-runit
+#ln -s /etc/runit/sv/lightdm /etc/runit/runsvdir/default # like systemctl enable
 groupadd -r autologin
-cd /usr/share
-mkdir xsessions
-cd xsessions
-printf "[Desktop Entry]\nExec=/usr/bin/startx\n" > dwm.desktop
-sed -i 's/'#autologin-user='/'autologin-user=connor'/g' /etc/lightdm/lightdm.conf
-sed -i 's/'#autologin-session='/'autologin-session=dwm'/g' /etc/lightdm/lightdm.conf
+#cd /usr/share
+#mkdir xsessions
+#cd xsessions
+#printf "[Desktop Entry]\nExec=/usr/bin/startx\n" > dwm.desktop
+#sed -i 's/'#autologin-user='/'autologin-user=connor'/g' /etc/lightdm/lightdm.conf
+#sed -i 's/'#autologin-session='/'autologin-session=dwm'/g' /etc/lightdm/lightdm.conf
 
 
 
