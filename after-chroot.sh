@@ -31,15 +31,15 @@ ln -s /etc/runit/sv/connmand /etc/runit/runsvdir/default
 
 
 # lightdm auto-login
-#pacman -S --noconfirm lightdm lightdm-runit
-#ln -s /etc/runit/sv/lightdm /etc/runit/runsvdir/default # like systemctl enable
+pacman -S --noconfirm lightdm lightdm-runit
+ln -s /etc/runit/sv/lightdm /etc/runit/runsvdir/default # like systemctl enable
 groupadd -r autologin
-#cd /usr/share
-#mkdir xsessions
-#cd xsessions
-#printf "[Desktop Entry]\nExec=/usr/bin/startx\n" > dwm.desktop
-#sed -i 's/'#autologin-user='/'autologin-user=connor'/g' /etc/lightdm/lightdm.conf
-#sed -i 's/'#autologin-session='/'autologin-session=dwm'/g' /etc/lightdm/lightdm.conf
+cd /usr/share
+mkdir xsessions
+cd xsessions
+printf "[Desktop Entry]\nExec=/usr/bin/startx\n" > dwm.desktop
+sed -i 's/'#autologin-user='/'autologin-user=connor'/g' /etc/lightdm/lightdm.conf
+sed -i 's/'#autologin-session='/'autologin-session=dwm'/g' /etc/lightdm/lightdm.conf
 
 
 
@@ -49,8 +49,8 @@ printf " \n \n" | passwd connor
 echo -e "root ALL=(ALL:ALL) ALL\n%wheel ALL=(ALL:ALL) NOPASSWD: ALL\n@includedir /etc/sudoers.d" > /etc/sudoers
 
 cd /home/connor
-#wget https://raw.githubusercontent.com/Connor-McCartney/deploy-arch-dwm/refs/heads/main/user.sh
-#chmod +x user.sh
-#sudo -u connor bash user.sh
+wget https://raw.githubusercontent.com/Connor-McCartney/deploy-arch-dwm/refs/heads/main/user.sh
+chmod +x user.sh
+sudo -u connor bash user.sh
 
 rm /after-chroot.sh
