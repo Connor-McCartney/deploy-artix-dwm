@@ -93,3 +93,13 @@ yay -S --noconfirm kvantum nwg-look
 
 # file previews 
 yay -S --noconfirm tumbler ffmpegthumbnailer libopenraw
+
+
+
+
+# compile neovim
+
+cd /opt
+sudo git clone https://github.com/neovim/neovim -b v0.12.2
+cd neovim
+sudo make install
