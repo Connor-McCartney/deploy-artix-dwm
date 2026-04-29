@@ -54,8 +54,8 @@ rm -rf /tmp/deploy-artix-dwm
 
 
 # dotfiles
-mkdir /home/connor/.local
-mkdir /home/connor/.config
+mkdir -p /home/connor/.local
+mkdir -p /home/connor/.config
 cd /tmp
 wget https://raw.githubusercontent.com/Connor-McCartney/deploy-artix-dwm/refs/heads/main/dotfiles/install.sh
 chmod +x install.sh
