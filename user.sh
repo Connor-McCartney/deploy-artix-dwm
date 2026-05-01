@@ -11,7 +11,7 @@ cd yay-bin
 printf "y\n" | makepkg -si
 
 
-sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox flameshot
+sudo pacman -S --noconfirm pavucontrol kitty thunar waterfox flameshot picom # picom v13
 # yay --noconfirm -S brave-bin discord obsidian google-chrome
 
 #sudo pacman -S --noconfirm xlibre-xserver      # i moved this to the pacstrap so that it's the very first thing
