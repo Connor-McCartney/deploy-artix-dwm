@@ -1,4 +1,5 @@
-target="uefi-luks-hyperv"
+#target="uefi-luks-hyperv"
+target="bios-thinkpad"
 
 
 ################
@@ -24,6 +25,16 @@ if [[ $target -eq "uefi-luks-hyperv" ]]; then
     mount /dev/sda1 /mnt/boot
     swapon /dev/vg1/swap
 fi
+
+
+if [[ $target -eq "bios-thinkpad" ]]; then
+    printf "o\nn\n\n\n\n+8G\nn\n\n\n\n\nt\n1\n82\na\n2\nw\n" | fdisk /dev/sda  
+    mkswap /dev/sda1
+    mkfs.ext4 /dev/sda2
+    mount /dev/sda2 /mnt
+    swapon /dev/sda1
+fi
+
 
 
 #sv up openntpd (runit)
