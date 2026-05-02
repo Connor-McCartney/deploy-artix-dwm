@@ -26,7 +26,7 @@ yay --noconfirm -S openvpn openresolv openvpn-update-resolv-conf
 
 # xrandr --output Virtual-1 --mode 1920x1080 # hyperv
 
-printf "#xrandr --output LVDS-1 --off\n#sleep 1\n#xrandr --output VGA-1 --auto\n\n# xrandr --output Virtual-1 --mode 1920x1080 # hyperv\nexec dwm" > /home/connor/.xsession # needed to boot with lightdm
+printf "#xrandr --output LVDS-1 --off\n#sleep 1\n#xrandr --output VGA-1 --auto\n\n# xrandr --output Virtual-1 --mode 1920x1080 # hyperv\n#picom -b --no-use-damage \nexec dwm" > /home/connor/.xsession # needed to boot with lightdm
 chmod +x /home/connor/.xsession
 
 
