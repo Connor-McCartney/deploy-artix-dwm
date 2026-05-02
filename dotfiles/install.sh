@@ -14,12 +14,13 @@ mv /tmp/deploy-artix-dwm/dotfiles/pyproject.toml /home/connor
 mv /tmp/deploy-artix-dwm/dotfiles/.wallpapers /home/connor
 
 mv /tmp/deploy-artix-dwm/dotfiles/.switcher.sh /home/connor
+mv /tmp/deploy-artix-dwm/dotfiles/.vim_saver.sh /home/connor
 mv /tmp/deploy-artix-dwm/dotfiles/.xsage.sh /home/connor
 mv /tmp/deploy-artix-dwm/dotfiles/.upvol.sh /home/connor
 mv /tmp/deploy-artix-dwm/dotfiles/.downvol.sh /home/connor
 
 mv /tmp/deploy-artix-dwm/dotfiles/.volume_change.mp3 /home/connor
 
-chmod +x /home/connor/.switcher.sh /home/connor/.xsage.sh /home/connor/.upvol.sh /home/connor/.downvol.sh
+chmod +x /home/connor/.switcher.sh /home/connor/.xsage.sh /home/connor/.vim_saver.sh /home/connor/.upvol.sh /home/connor/.downvol.sh
 
 rm -rf /tmp/deploy-artix-dwm
