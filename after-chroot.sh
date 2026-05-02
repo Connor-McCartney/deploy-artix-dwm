@@ -14,7 +14,7 @@ echo "artix" > /etc/hostname
 
 
 
-if [[ $target -eq "uefi-luks-hyperv" ]]; then
+if [[ $target = "uefi-luks-hyperv" ]]; then
     printf "MODULES=()\nBINARIES=()\nFILES=()\nHOOKS=(base udev autodetect microcode modconf kms keyboard keymap consolefont block encrypt lvm2 filesystems fsck)\n" > /etc/mkinitcpio.conf
     pacman -S --noconfirm thin-provisioning-tools lvm2
     mkinitcpio -p linux
@@ -25,7 +25,7 @@ if [[ $target -eq "uefi-luks-hyperv" ]]; then
 fi
 
 
-if [[ $target -eq "bios-thinkpad" ]]; then
+if [[ $target = "bios-thinkpad" ]]; then
     printf "GRUB_TIMEOUT=1\nGRUB_DISTRIBUTOR=\"Arch\"\nGRUB_CMDLINE_LINUX=\"loglevel=1 nowatchdog nvme_load=YES fsck.mode=skip modprobe.blacklist=iTCO_wdt\"\n" > /etc/default/grub
     grub-install /dev/sda
     grub-mkconfig -o /boot/grub/grub.cfg
