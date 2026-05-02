@@ -25,19 +25,19 @@ fi
 
 
 # connman is like NetworkManager
-pacman -S connman-runit connman-gtk --noconfirm
-ln -s /etc/runit/sv/connmand /etc/runit/runsvdir/default
+#pacman -S connman-runit connman-gtk --noconfirm
+#ln -s /etc/runit/sv/connmand /etc/runit/runsvdir/default
 
-#pacman -S connman-dinit connman-gtk --noconfirm
-#dinitctl --offline enable connmand
+pacman -S connman-dinit connman-gtk --noconfirm
+dinitctl --offline enable connmand
 
 
 # lightdm auto-login
-pacman -S --noconfirm lightdm lightdm-runit
-ln -s /etc/runit/sv/lightdm /etc/runit/runsvdir/default # like systemctl enable
+#pacman -S --noconfirm lightdm lightdm-runit
+#ln -s /etc/runit/sv/lightdm /etc/runit/runsvdir/default # like systemctl enable
 
-#pacman -S --noconfirm lightdm lightdm-dinit
-#dinitctl --offline enable lightdm
+pacman -S --noconfirm lightdm lightdm-dinit
+dinitctl --offline enable lightdm
 
 groupadd -r autologin
 cd /usr/share
