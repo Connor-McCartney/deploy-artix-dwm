@@ -31,7 +31,7 @@ fi
 
 #basestrap /mnt base base-devel runit elogind-runit
 basestrap /mnt base base-devel dinit elogind-dinit
-basestrap /mnt linux linux-firmware xlibre-xserver cryptsetup grub wget
+basestrap /mnt linux linux-firmware linux-firmware-intel xlibre-xserver cryptsetup grub wget
 fstabgen -U /mnt >> /mnt/etc/fstab
 
 
