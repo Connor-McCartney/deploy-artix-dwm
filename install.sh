@@ -9,7 +9,7 @@ set -e
 
 
 
-if [[ $target -eq "uefi-luks-hyperv" ]]; then
+if [[ $target = "uefi-luks-hyperv" ]]; then
     printf "g\nn\n1\n\n+256M\nt\n1\nn\n2\n\n\nw\n" | fdisk /dev/sda
     cryptsetup luksFormat /dev/sda2
     cryptsetup open /dev/sda2 cryptlvm
@@ -27,7 +27,7 @@ if [[ $target -eq "uefi-luks-hyperv" ]]; then
 fi
 
 
-if [[ $target -eq "bios-thinkpad" ]]; then
+if [[ $target = "bios-thinkpad" ]]; then
     printf "o\nn\n\n\n\n+8G\nn\n\n\n\n\nt\n1\n82\na\n2\nw\n" | fdisk /dev/sda  
     mkswap /dev/sda1
     mkfs.ext4 /dev/sda2
