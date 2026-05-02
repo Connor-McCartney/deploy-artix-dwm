@@ -29,7 +29,7 @@ fi
 
 
 if [[ $target = "uefi-luks-HP" ]]; then
-    printf "g\nn\n1\n\n+256M\nt\n1\nn\n2\n\n\nw\n" | fdisk nvme0n1
+    printf "g\nn\n1\n\n+256M\nt\n1\nn\n2\n\n\nw\n" | fdisk /dev/nvme0n1
     cryptsetup luksFormat /dev/nvme0n1p2
     cryptsetup open /dev/nvme0n1p2 cryptlvm
     pvcreate /dev/mapper/cryptlvm
