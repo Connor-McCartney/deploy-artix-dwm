@@ -26,7 +26,9 @@ if [[ $target -eq "uefi-luks-hyperv" ]]; then
 fi
 
 
-#sv up openntpd
+#sv up openntpd (runit)
+# dinitctl start ntpd (dinit)
+
 basestrap /mnt base base-devel runit elogind-runit
 basestrap /mnt linux linux-firmware xlibre-xserver cryptsetup grub wget
 fstabgen -U /mnt >> /mnt/etc/fstab
