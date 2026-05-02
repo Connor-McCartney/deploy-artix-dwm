@@ -29,7 +29,8 @@ fi
 #sv up openntpd (runit)
 # dinitctl start ntpd (dinit)
 
-basestrap /mnt base base-devel runit elogind-runit
+#basestrap /mnt base base-devel runit elogind-runit
+basestrap /mnt base base-devel dinit elogind-dinit
 basestrap /mnt linux linux-firmware xlibre-xserver cryptsetup grub wget
 fstabgen -U /mnt >> /mnt/etc/fstab
 
