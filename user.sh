@@ -6,8 +6,8 @@ sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep f
 
 # compile yay
 cd /tmp
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
+git clone https://aur.archlinux.org/yay.git
+cd yay
 printf "y\n" | makepkg -si
 
 
