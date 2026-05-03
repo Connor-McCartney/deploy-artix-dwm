@@ -12,7 +12,7 @@ printf "y\n" | makepkg -si
 
 
 sudo pacman -S --noconfirm pulseaudio pavucontrol kitty thunar waterfox flameshot picom # picom v13
-# yay --noconfirm -S brave-bin discord obsidian google-chrome
+# yay --noconfirm -S brave-bin discord-latest-bin obsidian google-chrome
 
 #sudo pacman -S --noconfirm xlibre-xserver      # i moved this to the pacstrap so that it's the very first thing
 sudo pacman -S --noconfirm xorg-xinit xorg-xrandr xclip xsel xorgproto
