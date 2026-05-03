@@ -2,7 +2,7 @@ set -e
 
 
 
-sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep fzf bat fd vim less git wget cmake unzip
+sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep fzf fd vim less git wget cmake unzip
 
 # compile yay
 cd /tmp
@@ -18,7 +18,7 @@ sudo pacman -S --noconfirm pulseaudio pavucontrol kitty thunar waterfox flamesho
 sudo pacman -S --noconfirm xorg-xinit xorg-xrandr xclip xsel xorgproto
 # xrandr --output Virtual-1 --mode 1920x1080
 
-yay --noconfirm -S openvpn openresolv openvpn-update-resolv-conf
+yay --noconfirm -S openvpn openresolv openvpn-update-resolv-conf bat
 
 # add these if using a monitor
 # xrandr --output LVDS-1 --off
