@@ -49,7 +49,7 @@ fi
 
 pacman -S connman-dinit connman-gtk --noconfirm
 dinitctl --offline enable connmand
-
+pacman -S wpa_supplicant wpa_supplicant-dinit --noconfirm
 
 # lightdm auto-login
 #pacman -S --noconfirm lightdm lightdm-runit
