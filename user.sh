@@ -43,6 +43,7 @@ mv /tmp/deploy-artix-dwm/suckless /home/connor
 cd /home/connor/suckless/dwm && sudo make clean install
 cd /home/connor/suckless/dmenu && sudo make clean install
 sudo mv /tmp/deploy-artix-dwm/xautomation-1.09 /opt
+sudo mv /tmp/deploy-artix-dwm/01-touchpad.conf /etc/X11/xorg.conf.d
 rm -rf /tmp/deploy-artix-dwm
 
 
