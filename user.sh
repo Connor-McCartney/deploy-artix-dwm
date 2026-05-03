@@ -2,7 +2,7 @@ set -e
 
 
 
-sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep fzf fd vim less git wget cmake unzip
+sudo pacman -S --noconfirm base-devel os-prober grub vlc htop git wget ripgrep fzf fd vim less git wget cmake unzip rustup
 
 # compile yay
 cd /tmp
